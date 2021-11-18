@@ -8,7 +8,7 @@ const sequelize = require('./config/connection');
 const path = require('path');
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: process.env.secret,
   cookie: {},
   resave: false,
   saveUninitialized: true,
